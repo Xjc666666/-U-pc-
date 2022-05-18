@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>小U课堂</title>
+</head>
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/public.css">
+<link rel="stylesheet" href="../font/style.css">
+<link rel="stylesheet" href="../css/online.css">
+<link rel="icon" href="../u_favicon.ico">
+<script src="../js/myStore.js"></script>
+<style>
+
+</style>
+
+<body>
+      <!-- 窗口登录页面 -->
+      <div class="box">
+        <div class="nav">
+            <span class="icon-conneection icon-font" id="lgdel"></span>
+            <div class="logo"><img src="./images/logo.png" alt=""></div>
+            <!--logo位置-->
+            <div class="submit">
+                <p>使用第三方软件登录</p>
+                <div class="icons">
+                    <div class="icons_jpg">
+                        <img src="../html/images/weixin.jpg" alt="">
+                        <img src="../html/images/qq.jpg" alt="">
+                        <img src="../html/images/weibo.jpg" alt="">
+                    </div>
+                </div>
+                <!--图标位置-->
+            </div>
+            <div class="ph">
+                <p>使用手机号登录</p>
+            </div>
+            <div class="fm">
+                <form action="javascript:;">
+                    <input type="text" name="user" id="lgname">
+                    <input type="password" name="pwd" id="lgpwd">
+                    <button id="lgbtn">登录</button>
+                    <div class="reset clearfix"><a href="javascript:;" class="resetpwd">忘记密码</a>
+                        <p class="user">还没有账号？
+                            <span><a href="javascript:;">点击注册</a></span>
+                        </p>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <!-- 窗口注册页面 -->
+    <div class="submit_box">
+        <div class="submit_nav">
+            <span class="icon-conneection icon-font" id="subdel"></span>
+            <div class="submit_logo"><img src="./images/logo.png" alt="logo"></div>
+            <div class="submit_ph">
+                <p>使用手机号注册</p>
+            </div>
+            <form action="#" class="submit_form">
+                <ul>
+                    <li class="tips1"><input type="text" placeholder="请输入您的手机号" name="user"></li>
+                    <li class="tips2"><input type="password" placeholder="请输入密码" name="pwd"></li>
+                    <li class="tips3"><input type="password" placeholder="请再次输入密码" name="pwd"></li>
+                    <li class="tips4 code"><input type="text" placeholder="请输入验证码"></li>
+                    <li class="regcode"></li>
+                    <li><a href="javascript:;" id="aSub">注册</a></li>
+                </ul>
+                <div class="user_agreement clearfix">
+                    <div class="user_agreement0"> <input type="checkbox"> <a href="javascript:;">我同意《用户使用协议》</a></div>
+                    <p class="user_agreement1">已有账号 <span><a href="javascript:;">去登陆</a></span></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--  -->
+    <!-- 头部模块 -->
+    <header>
+        <div class="header_content">
+            <div class="logo1">
+                <h1><a href="./index.html"><img src="../html/images/logo.png" alt=""></a></h1>
+                <div class="header_great">
+                    <ul>
+                        <li><a href="../html/index.html">首页</a></li>
+                        <li><a href="../html/classroom.html">同步课程</a></li>
+                        <li class="header_great_home"><a href="../html/online.html">在线练习</a></li>
+                        <li><a href="../html/great.html">精品课程</a></li>
+                    </ul>
+                </div>
+                <form action="" class="header_form">
+                    <span class="header_class">课程</span>
+                    <input type="text" placeholder="搜索感兴趣的内容" class="search">
+                    <button></button>
+                </form>
+                <p class="login_a">
+                    <a href="#"> 登录<span>/</span></a>
+                    <a href="#">注册</a>
+                </p>
+                <div class="usercenter">
+                    <img src="./images/user.png" alt="">
+                    <ul class="userlist">
+                        <li>用户名称</li>
+                        <li><a href="#">课程中心</a></li>
+                        <li><a href="#">订单中心</a></li>
+                        <li><a href="#">资金管理</a></li>
+                        <li><a href="#">个人中心</a></li>
+                        <li class="out"><a href="javascript:;">退出登录</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 选择学科、版本 -->
+    <div class="province">
+        <div class="province_form clearfix">
+            <div class="province_1">
+                <div class="choice">按省份选择</div>
+                <ul class="porvince_lis">
+                    <li class="porvince_lis_li">省份</li>
+                    <li class="porvince_lis_li1">城市</li>
+                </ul>
+            </div>
+            <div class="province_1">
+                <div class="choice city hotcity" >热门城市</div>
+                <div class="province_a">
+                    <a href="#">北京</a>
+                    <a href="#">上海</a>
+                    <a href="#">江苏</a>
+                    <a href="#">济南</a>
+                    <a href="#">河南</a>
+                    <a href="#">天津</a>
+                    <a href="#">沈阳</a>
+                    <a href="#">石家庄</a>
+                </div>
+            </div>
+            <div class="province_0">
+                <div class="choice  hotcity " style="margin-left: 0;">按年级选择</div>
+                <div class="province_a ">
+                    <a href="#">大班</a>
+                    <a href="#">中班</a>
+                    <a href="#">一年级</a>
+                    <a href="#">二年级</a>
+                    <a href="#">三年级</a>
+                    <a href="#">四年级</a>
+                    <a href="#">五年级</a>
+                    <a href="#">六年级</a>
+                    <a href="#">初一</a>
+                    <a href="#">初二</a>
+                    <a href="#">初三</a>
+                    <div class="hightschool"> <a href="#">高一</a>
+                        <a href="#">高二</a>
+                        <a href="#">高三</a>
+                    </div>
+                </div>
+            </div>
+            <div class="province_3">
+                <div class="choice  hotcity1" style="margin-left: 0;">按学科选择</div>
+                <div class="province_a  classlv">
+                    <a href="#">全部</a>
+                    <a href="#">语文</a>
+                    <a href="#">数学</a>
+                    <a href="#">英语</a>
+                    <a href="#">生物</a>
+                    <a href="#">历史</a>
+                    <a href="#">政治</a>
+                    <a href="#">物理</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 图片选择模块 -->
+    <div class="online clearfix">
+        <div class="more clearfix">
+            <h2>在线测试</h2>
+            <p><a href="">更多课程</a></p>
+        </div>
+        <div class="hot">
+            <img src="../html/images/beijing.png" alt="人教版精选语文课程">
+            <div class="Small_module ">
+                <span class="test">1100人在学习</span>
+                <h3>人教版语文第一节课程内容讲解</h3>
+                <p>6课时</p>
+                <span><a href="#">去考试</a></span>
+            </div>
+        </div>
+        <div class="hot">
+            <img src="../html/images/tianjing.png" alt="人教版精选语文课程">
+            <div class="Small_module ">
+                <span class="test">1100人在学习 </span>
+                <h3>人教版数学第一节课程内容讲解</h3>
+                <p>6课时</p>
+                <span><a href="#">去考试</a></span>
+            </div>
+        </div>
+        <div class="hot" style="margin-right: 0;">
+            <img src="../html/images/huhehaote.png" alt="人教版精选语文课程">
+            <div class="Small_module ">
+                <span class="test">1100人在学习 </span>
+                <h3>人教版英语第一节课程内容讲解</h3>
+                <p>6课时</p>
+                <span><a href="#">去考试</a></span>
+            </div>
+        </div>
+        <div class="hot">
+            <img src="../html/images/shanghai.png" alt="人教版精选语文课程">
+            <div class="Small_module ">
+                <span class="test">1100人在学习</span>
+                <h3>人教版数学第一节课程内容讲解</h3>
+                <p>6课时</p>
+                <span><a href="#">去考试</a></span>
+            </div>
+        </div>
+        <div class="hot">
+            <img src="../html/images/shijiazhuang.png" alt="人教版精选语文课程">
+            <div class="Small_module ">
+                <span class="test">1100人在学习 </span>
+                <h3>人教版语文第一节课程内容讲解</h3>
+                <p>6课时</p>
+                <span><a href="#">去考试</a></span>
+            </div>
+        </div>
+        <div class="hot" style="margin-right: 0;">
+            <img src="../html/images/henan.png" alt="人教版精选语文课程">
+            <div class="Small_module ">
+                <span class="test">1100人在学习</span>
+                <h3>人教版语文第一节课程内容讲解</h3>
+                <p>6课时</p>
+                <span><a href="#">去考试</a></span>
+            </div>
+        </div>
+        <img src="./images/1_03.png" alt="" class="advert">
+    </div>
+    <!-- 图片选择模块第二块 -->
+    <div class="online clearfix">
+        <div class="more clearfix">
+            <h2>在线测试</h2>
+            <p><a href="">更多课程</a></p>
+        </div>
+        <div class="hot">
+            <img src="../html/images/beijing.png" alt="人教版精选语文课程">
+            <div class="Small_module ">
+                <span class="test">1100人在学习</span>
+                <h3>人教版语文第六节课程内容讲解</h3>
+                <p>6课时</p>
+                <span><a href="#">去考试</a></span>
+            </div>
+        </div>
+        <div class="hot">
+            <img src="../html/images/tianjing.png" alt="人教版精选语文课程">
+            <div class="Small_module ">
+                <span class="test">1100人在学习 </span>
+                <h3>人教版数学第十六节课程内容讲解</h3>
+                <p>6课时</p>
+                <span><a href="#">去考试</a></span>
+            </div>
+        </div>
+        <div class="hot" style="margin-right: 0;">
+            <img src="../html/images/huhehaote.png" alt="人教版精选语文课程">
+            <div class="Small_module ">
+                <span class="test">1100人在学习 </span>
+                <h3>人教版英语第六节课程内容讲解</h3>
+                <p>6课时</p>
+                <span><a href="#">去考试</a></span>
+            </div>
+        </div>
+        <div class="hot">
+            <img src="../html/images/shanghai.png" alt="人教版精选语文课程">
+            <div class="Small_module ">
+                <span class="test">1100人在学习</span>
+                <h3>人教版数学第一节课程内容讲解</h3>
+                <p>6课时</p>
+                <span><a href="#">去考试</a></span>
+            </div>
+        </div>
+        <div class="hot">
+            <img src="../html/images/shijiazhuang.png" alt="人教版精选语文课程">
+            <div class="Small_module ">
+                <span class="test">1100人在学习 </span>
+                <h3>人教版语文第十节课程内容讲解</h3>
+                <p>6课时</p>
+                <span><a href="#">去考试</a></span>
+            </div>
+        </div>
+        <div class="hot" style="margin-right: 0;">
+            <img src="../html/images/henan.png" alt="人教版精选语文课程">
+            <div class="Small_module ">
+                <span class="test">1100人在学习</span>
+                <h3>人教版语文第一节课程内容讲解</h3>
+                <p>6课时</p>
+                <span><a href="#">去考试</a></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底边栏 -->
+    <footer>
+        <div class="footer_text">
+            <div class="footer_text_botton">
+                <ul class="clearfix">
+                    <li>首页</li>
+                    <li>关于我们</li>
+                    <li>加入我们</li>
+                    <li>合作专区</li>
+                    <li>联系我们</li>
+                    <li>AI开放平台</li>
+                    <li>意见反馈</li>
+                    <li>漏洞提交</li>
+                    <li>隐私政策</li>
+                    <li>版权声明</li>
+                    <li>反盗链声明</li>
+                    <li>网上有害信息举报</li>
+                    <li>备案公示</li>
+                    <li>营业执照</li>
+                    <li>教师资格证公示</li>
+                </ul>
+            </div>
+            <div class="footer_text_botton1">
+                <ul class="clearfix">
+                    <li>京ICP备&nbsp;13030888号&nbsp;Copyright&nbsp;&copy;&nbsp;2014-2019&nbsp;行者信息科技有限公司&nbsp;</li>
+                    <li>地址：&nbsp;北京市新华区马当路338号C座</li>
+                    <li>电话：&nbsp;010-66666666</li>
+                    <li>京公网安备&nbsp;01010102002533号</li>
+                </ul>
+            </div>
+            <div class="footer_text_botton2">
+                <ul class="clearfix">
+                    <li>京网文(2018) 4086-308号</li>
+                    <li>网络文化经营许可证:沪网文[2018]4086-308号</li>
+                    <li>增值电信业务经营许可证:京B2-20150021</li>
+                    <li>食品经营许可证:JY131011488888</li>
+                </ul>
+            </div>
+            <div class="footer_text_botton3">
+                <ul class="clearfix">
+                    <li>医疗企业经营许可证：京嘉食药监械经营许20188008号</li>
+                    <li>互联网药品信息服务资格证书：(京)-经营性-2018-0011</li>
+                </ul>
+            </div>
+        </div>
+        <script src="../js/public.js"></script>
+</body>
+
+</html>

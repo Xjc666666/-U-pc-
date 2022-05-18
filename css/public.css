@@ -1,0 +1,549 @@
+@charset 'utf-8';
+
+/* 登录页面 */
+#lgbtn {
+    cursor: pointer;
+}
+#lgdel {
+    cursor: pointer;
+}
+.box {
+    display: none;
+    z-index: 9999;
+}
+
+.icon-font {
+    float: right;
+    font-size: 28px;
+    color: #ccc;
+}
+
+.submit {
+    position: relative;
+}
+
+.icons .icons_jpg {
+    text-align: center;
+    margin-right: 28px;
+}
+
+.icons_jpg img:nth-child(2) {
+    margin: 0px 20px;
+}
+
+.logo img {
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.nav {
+    background-color: #fff;
+    width: 520px;
+    height: 522px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -260px 0 0 -261px;
+    /* z-index: 2; */
+}
+
+.box {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.logo {
+    height: 100px;
+}
+
+.submit p {
+    width: 162px;
+    height: 25px;
+    font-size: 18px;
+    text-align: justify;
+    color: #333;
+    margin: 10px auto;
+}
+
+.icons {
+    height: 80px;
+}
+
+.submit p:after {
+    content: " ";
+    border-top: 1px solid #ececec;
+    display: block;
+    width: 134px;
+    position: absolute;
+    left: 20px;
+    top: 14px;
+}
+
+.submit p:before {
+    content: "";
+    border-top: 1px solid #ececec;
+    display: block;
+    width: 134px;
+    position: absolute;
+    right: 20px;
+    top: 14px;
+}
+
+.ph {
+    position: relative;
+}
+
+.ph p {
+    height: 25px;
+    width: 126px;
+    margin: auto;
+    font-size: 18px;
+}
+
+.ph p::before {
+    content: "";
+    border-top: 1px solid #ececec;
+    display: block;
+    width: 134px;
+    position: absolute;
+    right: 20px;
+    top: 14px;
+}
+
+.ph p::after {
+    content: "";
+    border-top: 1px solid #ececec;
+    display: block;
+    width: 134px;
+    position: absolute;
+    left: 20px;
+    top: 14px;
+}
+
+.fm input {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #80c4ae;
+    border-radius: 4px;
+    text-indent: 2em;
+    outline: none;
+}
+
+.fm input {
+    width: 302px;
+    margin: 15px auto;
+    display: block;
+}
+
+.fm button {
+    width: 302px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #74c6b3;
+    border: none;
+    margin: 25px auto;
+    display: block;
+}
+
+.reset {
+    width: 302px;
+    margin: auto;
+}
+
+.reset a {
+    text-decoration: none;
+    color: #74c6b3;
+}
+
+.resetpwd {
+    float: left;
+}
+
+.user {
+    float: right;
+}
+
+#wrong {
+    /* 错误时显示的样式 后期JS调用类名即可 */
+    outline: solid red 1px;
+    border: none;
+}
+
+.wrong button::before {
+    /* 错误时显示的样式 后期JS调用类名即可*/
+    content: "您输入的账号或密码不正确";
+    color: red;
+    position: absolute;
+    left: 180px;
+    bottom: 139px;
+}
+
+/* 注册页面 */
+#subdel {
+    cursor: pointer;
+}
+.submit_nav {
+    background-color: #fff;
+    width: 520px;
+    height: 522px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -260px 0 0 -261px;
+}
+
+.submit_box {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: none;
+    /*隐藏标签*/
+}
+
+.submit_logo {
+    height: 100px;
+}
+
+.submit_logo img {
+    margin: 20px auto;
+    display: block;
+}
+
+.submit_ph {
+    height: 40px;
+    position: relative;
+}
+
+.submit_ph p {
+    width: 130px;
+    margin: 10px auto;
+    font-size: 18px;
+}
+
+.submit_ph p:after {
+    content: " ";
+    border-top: 1px solid #ececec;
+    display: block;
+    width: 134px;
+    position: absolute;
+    left: 20px;
+    top: 14px;
+}
+
+.submit_ph p:before {
+    content: "";
+    border-top: 1px solid #ececec;
+    display: block;
+    width: 134px;
+    position: absolute;
+    right: 20px;
+    top: 14px;
+}
+
+.submit_form li {
+    text-align: center;
+}
+.submit_form ul {
+    position: relative;
+}
+input[type="text"],
+input[type="password"] {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #80c4ae;
+    border-radius: 4px;
+    text-indent: 10px;
+    outline: none;
+    margin-bottom: 20px;
+}
+.code input {
+    width: 130px;
+}
+.code {
+    margin-left: -170px;
+}
+.regcode {
+    width: 150px;
+    height: 40px;
+    background-color: #ccc;
+    position: absolute;
+    right: 107px;
+    bottom: 61px;
+    text-align: center;
+    line-height: 40px;
+}
+.submit_form ul a {
+    display: block;
+    width: 302px;
+    background-color: #80c4ae;
+    margin: auto;
+    line-height: 40px;
+    border-radius: 4px;
+    color: white;
+}
+
+.user_agreement {
+    width: 300px;
+    margin: auto;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.user_agreement0 {
+    float: left;
+}
+
+.user_agreement1 {
+    float: right;
+}
+
+.user_agreement0 a {
+    color: rgb(155, 155, 155);
+}
+
+.user_agreement1 a {
+    color: #80c4ae;
+}
+
+#color_red
+
+/* 文本框的错误提示，使用添加ID名的方法 */ {
+    border: none;
+    outline: 1px solid red;
+}
+
+.submit_form ul {
+    position: relative;
+}
+
+/* 之下四个模块是错误提示，用hidden隐藏了 */
+.tips1wrong:after {
+    content: "手机号格式错误，请重新输入！";
+    font-size: 12px;
+    position: absolute;
+    left: 120px;
+    top: 43px;
+    color: red;
+}
+
+.tips2wrong:after {
+    content: "密码由6-15位字母数字组合，请重新输入！";
+    font-size: 12px;
+    position: absolute;
+    left: 120px;
+    top: 106px;
+    color: red;
+}
+
+.tips3wrong:after {
+    content: "密码两次输入不同请验证~";
+    font-size: 12px;
+    position: absolute;
+    left: 120px;
+    top: 169px;
+    color: red;
+}
+
+.tips4wrong:after {
+    content: "验证码输入不正确";
+    font-size: 12px;
+    position: absolute;
+    left: 120px;
+    top: 231px;
+    color: red;
+}
+
+/* 头部模块 */
+header {
+    width: 100%;
+    height: 80px;
+    background: #ffffff;
+    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.04);
+}
+
+.header_content {
+    width: 1180px;
+    height: 80px;
+    margin: auto;
+}
+
+/* 辅助线 */
+.header_content .logo1 {
+    height: 80px;
+}
+
+.header_content img {
+    float: left;
+    margin-top: 10px;
+    margin-right: 120px;
+}
+
+.header_great_home {
+    background-color: #80c4ae;
+}
+
+.header_great li {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+}
+
+.header_great_home a {
+    color: #fff;
+}
+
+.header_great li {
+    float: left;
+    margin-right: 10px;
+}
+
+.login_li {
+    float: right;
+}
+
+.login_li li {
+    float: right;
+}
+
+.header_form {
+    float: left;
+    margin: 20px 0 20px 70px;
+    width: 285px;
+    height: 36px;
+    position: relative;
+}
+
+.header_form span:after {
+    content: "";
+    display: block;
+    border: 5px solid;
+    width: 0px;
+    height: 0px;
+    border-color: #80c4ae transparent transparent transparent;
+    position: absolute;
+    left: 55px;
+    top: 15px;
+}
+
+.header_form .search {
+    width: 210px;
+    height: 34px;
+    float: left;
+    border: 1px solid #80c4ae;
+    border-radius: 0 4px 4px 0;
+    text-align: center;
+    line-height: 34px;
+}
+
+.header_class {
+    width: 70px;
+    height: 34px;
+    border: 1px solid #80c4ae;
+    border-radius: 4px 0 0 4px;
+    float: left;
+    text-align: center;
+    line-height: 34px;
+}
+
+.header_form button {
+    position: absolute;
+    bottom: 8px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../html/images/search_03.png);
+    border: none;
+    background-color: #fff;
+}
+
+.login_a {
+    float: left;
+    margin: 25px 0px 0 45px;
+}
+
+/* 底边栏 */
+footer {
+    width: 100%;
+    height: 275px;
+    background-color: #333;
+    overflow: hidden;
+    margin-top: 35px;
+}
+
+.footer_text {
+    width: 1200px;
+    min-height: 90px;
+    margin: 75px auto;
+}
+.footer_text li {
+    font-size: 14px;
+    color: #f0f2f5;
+    line-height: 18px;
+    float: left;
+}
+.footer_text li:after {
+    content: "|";
+    padding: 0px 5px;
+}
+.footer_text_botton {
+    margin-left: 40px;
+}
+.footer_text_botton1 {
+    margin: 20px 0 0 80px;
+}
+.footer_text_botton2 {
+    margin: 20px 0 0 120px;
+}
+.footer_text_botton3 {
+    margin: 20px 0 0 180px;
+}
+/*登录后显示页面*/
+.usercenter {
+    /* display: none; */
+    width: 36px;
+    height: 36px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 30px;
+    position: relative;
+}
+.usercenter img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.usercenter ul {
+    /* display: none; */
+    width: 130px;
+    height: 250px;
+    background: url(../html/images/jx.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 20px;
+    position: absolute;
+    top: 40px;
+    left: -110px;
+    z-index: 999;
+}
+.usercenter ul li {
+    width: 100%;
+    height: 35px;
+    font: 16px/35px "微软雅黑";
+    text-align: center;
+    color: #333;
+}
+.usercenter ul li a {
+    color: #333;
+}
+.usercenter:hover ul {
+    display: block;
+}

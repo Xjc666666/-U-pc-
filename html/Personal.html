@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>小U课堂</title>
+</head>
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/public.css">
+<link rel="stylesheet" href="../font/style.css">
+<link rel="stylesheet" href="../css/Personal.css">
+<link rel="icon" href="../u_favicon.ico">
+<script src="../js/myStore.js"></script>
+<script src="../js/personal.js"></script>
+</head>
+
+<body>
+    <!-- 绝对定位 -->
+    <div class="location">
+        <p><img src="../html/images/ks1_03.png" alt=""><a href="#">我的考试</a> </p>
+        <p><img src="../html/images/ks2_03.png" alt=""><a href="#">我的课程</a></p>
+        <p><img src="../html/images/ks3_03.png" alt=""><a href="#anchor_location" name="anchor_location">返回首页</a>
+        </p>
+    </div>
+    <!-- 窗口登录页面 -->
+    <div class="box">
+        <div class="nav">
+            <span class="icon-conneection icon-font" id="lgdel"></span>
+            <div class="logo"><img src="./images/logo.png" alt=""></div>
+            <!--logo位置-->
+            <div class="submit">
+                <p>使用第三方软件登录</p>
+                <div class="icons">
+                    <div class="icons_jpg">
+                        <img src="../html/images/weixin.jpg" alt="">
+                        <img src="../html/images/qq.jpg" alt="">
+                        <img src="../html/images/weibo.jpg" alt="">
+                    </div>
+                </div>
+                <!--图标位置-->
+            </div>
+            <div class="ph">
+                <p>使用手机号登录</p>
+            </div>
+            <div class="fm">
+                <form action="javascript:;">
+                    <input type="text" name="user" id="lgname">
+                    <input type="password" name="pwd" id="lgpwd">
+                    <button id="lgbtn">登录</button>
+                    <div class="reset clearfix"><a href="javascript:;" class="resetpwd">忘记密码</a>
+                        <p class="user">还没有账号？
+                            <span><a href="javascript:;">点击注册</a></span>
+                        </p>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <!-- 窗口注册页面 -->
+    <div class="submit_box">
+        <div class="submit_nav">
+            <span class="icon-conneection icon-font" id="subdel"></span>
+            <div class="submit_logo"><img src="./images/logo.png" alt="logo"></div>
+            <div class="submit_ph">
+                <p>使用手机号注册</p>
+            </div>
+            <form action="#" class="submit_form">
+                <ul>
+                    <li class="tips1"><input type="text" placeholder="请输入您的手机号" name="user"></li>
+                    <li class="tips2"><input type="password" placeholder="请输入密码" name="pwd"></li>
+                    <li class="tips3"><input type="password" placeholder="请再次输入密码" name="pwd"></li>
+                    <li class="tips4 code"><input type="text" placeholder="请输入验证码"></li>
+                    <li class="regcode"></li>
+                    <li><a href="javascript:;" id="aSub">注册</a></li>
+                </ul>
+                <div class="user_agreement clearfix">
+                    <div class="user_agreement0"> <input type="checkbox"> <a href="javascript:;">我同意《用户使用协议》</a></div>
+                    <p class="user_agreement1">已有账号 <span><a href="javascript:;">去登陆</a></span></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- 头部模块 -->
+    <header>
+        <div class="header_content">
+            <div class="logo1" id="anchor_location">
+                <h1><a href="./index.html"><img src="../html/images/logo.png" alt=""></a></h1>
+                <div class="header_great">
+                    <ul>
+                        <li class="header_great_home"><a href="../html/index.html">首页</a></li>
+                        <li><a href="../html/classroom.html">同步课程</a></li>
+                        <li><a href="../html/online.html">在线练习</a></li>
+                        <li><a href="../html/great.html">精品课程</a></li>
+                    </ul>
+                </div>
+                <form action="" class="header_form">
+                    <span class="header_class">课程</span>
+                    <input type="text" placeholder="搜索感兴趣的内容" class="search">
+                    <button></button>
+                </form>
+                <p class="login_a">
+                    <a href="#"> 登录<span>/</span></a>
+                    <a href="#">注册</a>
+                </p>
+                <div class="usercenter">
+                    <img src="./images/user.png" alt="">
+                    <ul class="userlist">
+                        <li>用户名称</li>
+                        <li><a href="javascript:;">课程中心</a></li>
+                        <li><a href="javascript:;">订单中心</a></li>
+                        <li><a href="javascript:;">资金管理</a></li>
+                        <li><a href="javascript:;">个人中心</a></li>
+                        <li class="out"><a href="javascript:;">退出登录</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 内容模块 -->
+    <div class="personal_content clearfix">
+        <div class="personal_left">
+            <div class="personal_class clearfix">
+                <img src="../html/images/kczx.png" width="41" height="31" alt="">
+                <dl>
+                    <dt>课程中心<span class="delta"></span></dt>
+                    <dd>我的课程<i></i></dd>
+                    <dd>我的练习<i></i></dd>
+                </dl>
+            </div>
+            <div class="personal_class clearfix" style="margin-top: 15px;">
+                <img src="../html/images/dingdan.png" width="41" height="31" alt="">
+                <dl>
+                    <dt>订单中心<span class="delta"></span></dt>
+                    <dd>我的订单<i></i></dd>
+                </dl>
+            </div>
+            <div class="personal_class clearfix" style="margin-top: 15px;">
+                <img src="../html/images/money.png" width="41" height="31" alt="">
+                <dl>
+                    <dt>资金管理<span class="delta"></span></dt>
+                    <dd>我的钱包<i></i></dd>
+                    <dd>优惠券<i style="margin-left: 77px;"></i></dd>
+                </dl>
+            </div>
+            <div class="personal_class clearfix" style="margin-top: 15px;">
+                <img src="../html/images/geren.png" width="41" height="31" alt="">
+                <dl>
+                    <dt>个人中心<span class="delta"></span></dt>
+                    <dd>账户设置<i></i></dd>
+                    <dd>我的消息<i></i></dd>
+                    <dd>我的评价<i></i></dd>
+                </dl>
+            </div>
+
+        </div>
+        <!-- 安全设置模块 -->
+
+        <!-- 右边模块 -->
+        <div class="personal_right">
+            <div class="personal_user">
+                <span>账户设置</span>
+                <em>&gt;</em>
+                <span>个人中心</span>
+            </div>
+            <div class="archives ">
+                <span class="archives1"><a href="#">学员档案</a></span>
+                <span class="archives2"><a href="#">安全设置</a></span>
+            </div>
+            <div class="personal_safe_none">
+                <div class="personal_safe clearfix">
+                    <div class="personal_pwd">
+                        <ul>
+                            <li>登陆密码</li>
+                            <li>123456789</li>
+                            <li><a href="#">修改登录密码</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="personal_safe clearfix">
+                    <div class="personal_pwd">
+                        <ul>
+                            <li>绑定手机</li>
+                            <li>157****7778</li>
+                            <li><a href="#">更换手机号</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="personal_safe clearfix">
+                    <div class="personal_pwd">
+                        <ul>
+                            <li class="other">第三方账号绑定</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rest">如需注销账号或找回账号，请联系客服进行操作。</div>
+            </div>
+
+            <!-- 右边隐藏模块 -->
+            <div class="head_none">
+                <div class="head_photo clearfix">
+                    <span class="head_photo0">头像
+                    </span>
+                    <span class="head_photo1">
+                        <label for="photo"><img src="../html/images/head.png" width="60px" height="60px" alt="">
+                            <span class="mask">更换头像</span></label>
+                        <input type="file" id="photo" style="display: none;">
+                    </span>
+                </div>
+                <form action="#" class="clearfix">
+                    <div class="personal_from1 clearfix">
+                        <ul>
+                            <li class="personal_from2">真实姓名</li>
+                            <li class="personal_from3"><input type="text" placeholder="方便老师联系你，只能修改一次哦~"></li>
+                        </ul>
+                    </div>
+                    <div class="personal_from1 personal_model clearfix">
+                        <ul>
+                            <li class="personal_from2">昵称</li>
+                            <li class="personal_from3"><input type="text"></li>
+                        </ul>
+                    </div>
+                    <div class=" personal_sex clearfix">
+                        <ul>
+                            <li class="personal_sex_li">学员性别</li>
+                        </ul>
+                        <div class="personal_input"><input type="radio" value="男" name="sex"><span>男</span></div>
+                        <div class="personal_input1"><input type="radio" value="女" name="sex"><span>女</span></div>
+                    </div>
+                    <div class=" personal_from1 clearfix personal_bsday">
+                        <ul>
+                            <li class="personal_from2">生日</li>
+                            <li class="personal_from3"><input type="text"></li>
+                        </ul>
+                    </div>
+                    <div class="personal_tel">
+                        <ul class="clearfix">
+                            <li class="tel">联系方式</li>
+                            <li>157****8899</li>
+                            <li class="tel_color">修改手机号请到<a href="#">[安全设置]</a></li>
+                        </ul>
+                        <ul class="clearfix clty_li">
+                            <li class="city">所在城市</li>
+                            <li><select>
+                                    <option value="省">省份</option>
+                                </select></li>
+                        </ul>
+                    </div>
+                    <div class="personal_lv clearfix">
+                        <ul>
+                            <li class="personal_lv_lis">学习阶段</li>
+                            <li class="personal_tel personal_tel_lv"><select>
+                                    <option value="学习阶段"></option>
+                                </select></li>
+                            <li class="personal_lv_stady">编辑学习阶段与兴趣标签，获得更好的课程推荐</li>
+                        </ul>
+                        <input type="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- 右边模块结束 -->
+    </div>
+    <!-- 底部通栏模块 -->
+    <footer>
+        <div class="footer_text">
+            <div class="footer_text_botton">
+                <ul class="clearfix">
+                    <li>首页</li>
+                    <li>关于我们</li>
+                    <li>加入我们</li>
+                    <li>合作专区</li>
+                    <li>联系我们</li>
+                    <li>AI开放平台</li>
+                    <li>意见反馈</li>
+                    <li>漏洞提交</li>
+                    <li>隐私政策</li>
+                    <li>版权声明</li>
+                    <li>反盗链声明</li>
+                    <li>网上有害信息举报</li>
+                    <li>备案公示</li>
+                    <li>营业执照</li>
+                    <li>教师资格证公示</li>
+                </ul>
+            </div>
+            <div class="footer_text_botton1">
+                <ul class="clearfix">
+                    <li>京ICP备&nbsp;13030888号&nbsp;Copyright&nbsp;&copy;&nbsp;2014-2019&nbsp;行者信息科技有限公司&nbsp;</li>
+                    <li>地址：&nbsp;北京市新华区马当路338号C座</li>
+                    <li>电话：&nbsp;010-66666666</li>
+                    <li>京公网安备&nbsp;01010102002533号</li>
+                </ul>
+            </div>
+            <div class="footer_text_botton2">
+                <ul class="clearfix">
+                    <li>京网文(2018) 4086-308号</li>
+                    <li>网络文化经营许可证:沪网文[2018]4086-308号</li>
+                    <li>增值电信业务经营许可证:京B2-20150021</li>
+                    <li>食品经营许可证:JY131011488888</li>
+                </ul>
+            </div>
+            <div class="footer_text_botton3">
+                <ul class="clearfix">
+                    <li>医疗企业经营许可证：京嘉食药监械经营许20188008号</li>
+                    <li>互联网药品信息服务资格证书：(京)-经营性-2018-0011</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/public.js"></script>
+</body>
+
+</html>
